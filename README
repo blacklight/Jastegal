@@ -1,0 +1,21 @@
+Jastegal (Just Another Steganography Algorithm) v.0.1b
+c0ded by BlackLight <blacklight@autistici.org>
+
+Usage: ./jastegal [-d|-e] <-i image file> [-o output image file] [-f file to be steganographied]
+
+-d:             Perform a decoding from an image
+-e:             Perform an encoding to an image
+-i:             Specify the input image to be processed. In case of decoding, the content of this file will be de-steganographied,
+                while in case of encoding this is the image to steganography from
+-o:             Specify the output image. This parameter is mandatory in encoding phase, as it specifies the file name containing
+                the image with the steganographied data
+-f:             Specify, in encoding phase, the file containing data to be steganographied. If this option is not specified, the
+                data will be gathered via stdin
+
+Examples:
+        jastegal -e -i input_image.png -o output_image.png -f file.txt
+        This will encode the data in file.txt using input_image.png as image, and putting the output in output_image.png
+
+        jastegal -d -i input_image.png
+        This will decode the data in input_image.png to stdout
+

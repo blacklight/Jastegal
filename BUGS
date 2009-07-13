@@ -1,0 +1,5 @@
+Sometimes the last two bytes or the last byte of the text is truncated
+in decode operations. I don't know if it's my fault, as this bug seems
+to happen almost in random strings of random length, or zLib's fault.
+I'll try to fix anyway.
+

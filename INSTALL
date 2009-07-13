@@ -1,0 +1,18 @@
+* PREREQUISITES
+
+> You must have CImg libraries <http://cimg.sourceforge.net/> installed on your
+  system in order to compile and use Jastegal. These libraries are used for a
+  high-level wrapping of image managing.
+
+> You also must have zlib installed on your system. zlib is installed almost
+  anywhere, and it's use by Jastemal for compression/uncompression operations.
+
+
+* INSTALLATION
+
+> To install Jastegal on your system you need, of course, g++ and gmake already
+  installed. Then, just type:
+
+  $ make
+  % make install
+
